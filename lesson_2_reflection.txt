@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+	It makes .git directory thus makes a checkpoint that it could know that this directory is under git control
+
+How is the staging area differnt from the working directory and the repository? What value do you think it offers?
+	staging area separately shows you which files would be commited before you really commit.
+	this allows you to think prudently and help you not to make repository cluttered or messy.
+	you can rollback before you commit in the staging area.
