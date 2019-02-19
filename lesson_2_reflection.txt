@@ -5,3 +5,26 @@ How is the staging area differnt from the working directory and the repository? 
 	staging area separately shows you which files would be commited before you really commit.
 	this allows you to think prudently and help you not to make repository cluttered or messy.
 	you can rollback before you commit in the staging area.
+
+How can you use the staging area to make sure you have one commit per logical change?
+	adding and check by 'git status', you can sure which file is on the staging area.
+	comparing staged file to most recent commit by 'git diff --staged' would show you whether your intention properly 
+	reflected and ready to commit. during this, you have to consider you made one logical change before you commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	When you want to keep a successful version or that is worth conserve and you want to get there easily anytime
+	yet you want to try something going way another route significant. you can access whole different two or more 
+	version and keep each one to developed.
+
+How do the diagrams help you visualize the branch structure?
+	the concept of branch having parent and child, tip and label, reachable commits and the unreachables are depicted in one picture
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	Merging two branches make one complete version that has all changes from each branch not conflicting. 
+	Seeing all commits from two branches in plain text by git log is confusing, so we need graphical feature to separate
+	which commit is from which branch.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+	pros : can save time to check diffs all the time
+	cons : have possibilities of messing up, for example, when person A added some part relying on or affected by something deleted by person B then 
+		automerged version might have logically missing part with no conflict detected by Git.
